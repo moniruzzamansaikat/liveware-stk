@@ -1,0 +1,66 @@
+.navbar {
+    background-color: $navbar-bg-color;
+    color: $navbar-text-color;
+    height: $navbar-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $navbar-padding;
+
+    &__brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    &__links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__item {
+        margin-left: 20px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $navbar-text-color;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+        font-weight: 600;
+        font-family: $body-font;
+
+        &:hover {
+            color: $navbar-link-hover-color;
+        }
+    }
+}
+
+// Responsive Navbar for smaller screens
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: $navbar-padding;
+
+        &__links {
+            flex-direction: column;
+            width: 100%;
+            margin-top: 10px;
+
+            &__item {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            &__link {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}

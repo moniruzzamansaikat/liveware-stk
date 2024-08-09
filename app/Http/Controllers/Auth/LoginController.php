@@ -27,6 +27,11 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/dashboard';
 
+    public function showLoginForm()
+    {
+        return view('user.auth.login');
+    }
+
     /**
      * Create a new controller instance.
      *
@@ -36,5 +41,15 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
         $this->middleware('auth')->only('logout');
+    }
+
+    public function authenticated()
+    {
+        return to_route('user.dashboard');
+    }
+
+    public function username()
+    {
+        return 'username';
     }
 }

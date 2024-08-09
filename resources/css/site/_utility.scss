@@ -1,0 +1,56 @@
+// resources/scss/base/_variables.scss
+$spacing-unit: 4px;
+$spacing-range: 10;
+
+// resources/scss/components/_utilities.scss
+// Padding utilities
+@for $i from 1 through $spacing-range {
+    .padding-#{$i} {
+        padding: $i * $spacing-unit;
+    }
+
+    .padding-top-#{$i} {
+        padding-top: $i * $spacing-unit;
+    }
+
+    .padding-right-#{$i} {
+        padding-right: $i * $spacing-unit;
+    }
+
+    .padding-bottom-#{$i} {
+        padding-bottom: $i * $spacing-unit;
+    }
+
+    .padding-left-#{$i} {
+        padding-left: $i * $spacing-unit;
+    }
+}
+
+// Margin utilities
+@for $i from 1 through $spacing-range {
+    .margin-#{$i} {
+        margin: $i * $spacing-unit;
+    }
+
+    .margin-top-#{$i} {
+        margin-top: $i * $spacing-unit;
+    }
+
+    .margin-right-#{$i} {
+        margin-right: $i * $spacing-unit;
+    }
+
+    .margin-bottom-#{$i} {
+        margin-bottom: $i * $spacing-unit;
+    }
+
+    .margin-left-#{$i} {
+        margin-left: $i * $spacing-unit;
+    }
+}
+
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}

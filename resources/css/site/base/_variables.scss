@@ -1,0 +1,21 @@
+
+$brand-color: rgb(12, 129, 255);
+$dark-color: #1d1d1d;
+$light-color: #EEEEEE;
+
+$navbar-bg-color: lighten($brand-color, 20%);
+$navbar-text-color: $dark-color;
+$navbar-link-hover-color: $dark-color;
+$navbar-height: 60px;
+$navbar-padding: 20px;
+
+$button-bg-color: $brand-color;
+$button-text-color:$light-color;
+$button-hover-bg-color: darken($button-bg-color, 10%);
+
+// color shades
+$brand-color-light: lighten($brand-color, 20%); // Lighter shade for borders
+$brand-color-dark: darken($brand-color, 10%); // Darker shade for focus
+$brand-color-error: #e74c3c; // Red for error states
+
+$body-font: "Roboto", sans-serif;

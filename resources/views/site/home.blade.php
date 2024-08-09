@@ -1,25 +1,41 @@
-<style>
-    [class^="grid-"] {
-        border: 1px solid;
-    }
-</style>
-
-<div class="grid">
-
-    <div class="grid-50 grid-parent">
-        <div class="grid-50">Parent's first child</div>
-        <div class="grid-50 grid-parent">
-            <div class="grid-75">Awesom</div>
-            <div class="grid-25">Am so cool</div>
+<div>
+    <div class="grid">
+        <div class="grid-33">
+            <div class="card">
+                <div class="card__body">
+                    <h2 class="card__title">Another Card</h2>
+                    <p class="card__text">
+                        This is another card without a header or footer, just some body content. You can use it for
+                        simpler layouts.
+                    </p>
+                    <button class="button button--secondary">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-33">
+            <div class="card">
+                <div class="card__body">
+                    <h2 class="card__title">Another Card</h2>
+                    <p class="card__text">
+                        This is another card without a header or footer, just some body content. You can use it for
+                        simpler layouts.
+                    </p>
+                    <button class="button button--secondary">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-33">
+            <div class="card">
+                <div class="card__body">
+                    <h2 class="card__title">Another Card</h2>
+                    <p class="card__text">
+                        This is another card without a header or footer, just some body content. You can use it for
+                        simpler layouts.
+                    </p>
+                    <button class="button button--secondary">Learn More</button>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <div class="grid-25">
-        I am 25% wide.
-    </div>
 
-    <div class="grid-25">
-        I am 25% wide.
-    </div>
-    
 </div>

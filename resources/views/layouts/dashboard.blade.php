@@ -16,13 +16,12 @@
 </head>
 
 <body>
-    @include('site.partials.navbar')
-
-    <div class="container padding-top-3">
+    <div class="container padding-top-3 padding-bottom-3">
         {{ $slot }}
     </div>
 
     @vite(['resources/js/site/site.js'], 'assets')
+
 </body>
 
 </html>

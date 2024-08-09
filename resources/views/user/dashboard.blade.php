@@ -1,8 +1,5 @@
 <div>
-    <form action="{{ route('logout') }}" method="POST">
-        @csrf
-        <button type="submit">Logout</button>
-    </form>
-    
-    <h1>User dashboard</h1>
+    <h1>Dashboard</h1>
+
+    <a href="{{ route('logout') }}" class="button button--outline">Logout</a>
 </div>

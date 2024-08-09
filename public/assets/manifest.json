@@ -1,11 +1,12 @@
 {
   "resources/css/admin/admin.scss": {
-    "file": "css/admin.DJyckdC3.css",
+    "file": "js/admin.l0sNRNKZ.js",
+    "name": "admin",
     "src": "resources/css/admin/admin.scss",
     "isEntry": true
   },
   "resources/css/site/site.scss": {
-    "file": "css/site.B6hfOiao.css",
+    "file": "css/site.Dhtv0RLI.css",
     "src": "resources/css/site/site.scss",
     "isEntry": true
   },
